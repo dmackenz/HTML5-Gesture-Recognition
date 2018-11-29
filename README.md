@@ -6,5 +6,5 @@ nodejs gesture recognition for the browser
 * [x] Create client for recognizing gestures.
 * [x] Normalize gesture tracking for any viewport size.
 * [x] Create server with socket for accepting gestures.
-* [] Create training set for model using built client.
-* [] Create and train model. 
+* [ ] Create training set for model using built client.
+* [ ] Create and train model. 
