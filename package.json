@@ -1,0 +1,16 @@
+{
+  "name": "gesture_recognition",
+  "version": "1.0.0",
+  "description": "Server implementation for RNN gesture recognition",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "localtunnel": "^1.9.1",
+    "socket.io": "^2.1.1"
+  }
+}
