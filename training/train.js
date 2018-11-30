@@ -1,4 +1,4 @@
-// create canvas to display the swipe as its being recorded.
+// Create canvas to display the swipe as its being recorded.
 function setup() {
     createCanvas(400, 400);
     background(0);
