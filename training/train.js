@@ -1,51 +1,55 @@
+// create canvas to display the swipe as its being recorded.
 function setup() {
     createCanvas(400, 400);
     background(0);
 }
 
-function draw() {
-    frameRate(5);
-    stroke(random(255), random(255), random(255));
-}
-
-let xs = [];
-let ys = [];
+// Track the x and y coordinates of the swipe.
+let xPoints = [];
+let yPoints = [];
 
 function touchStarted(e) {
-    xs = [];
-    ys = [];
+    // Clear coordinates array each time display is touched.
+    xPoints = [];
+    yPoints = [];
 }
 
 function touchMoved(e) {
-    xs.push(mouseX);
-    ys.push(mouseY);
+    // Push the x and y location each time the finger moves.
+    xPoints.push(mouseX);
+    yPoints.push(mouseY);
 }
 
 function touchEnded(e) {
-    for (let i = 0; i < xs.length; i++) {
-        xs[i] = map(xs[i], 0, windowWidth, 0, 1);
-        ys[i] = map(ys[i], 0, windowHeight, 0, 1);
+    // Normalize the swipe to only contain data between 0 and 1.
+    // This makes the algorithm independent of viewport size.
+    for (let i = 0; i < xPoints.length; i++) {
+        xPoints[i] = map(xPoints[i], 0, windowWidth, 0, 1);
+        yPoints[i] = map(yPoints[i], 0, windowHeight, 0, 1);
     }
-    let data = {
-        x:xs,
-        y:ys
+
+    // Construct JSON object of swipe.
+    let swipe = {
+        x:xPoints,
+        y:yPoints
     };
 
+    // Draw the swipe that just occurred to the canvas for debugging purposes.
     let px = null;
-    for (let i = 0; i < xs.length; i++) {
-        let x = map(xs[i], 0, 1, 0, width);
-        let y = map(ys[i], 0, 1, 0, height);
-        if (px) {
-            line(px, py, x, y);
-        }
+    stroke(random(255), random(255), random(255));
+    for (let i = 0; i < xPoints.length; i++) {
+        let x = map(xPoints[i], 0, 1, 0, width);
+        let y = map(yPoints[i], 0, 1, 0, height);
+        if (px) { line(px, py, x, y); }
         px = x;
         py = y;
     }
 
-    let url = "http://localhost:3000/right";
-    upload(url, data);
+    // Upload the swipe to the server to be recorded.
+    upload(URL + "/right", swipe);
 }
 
+// Declaration of post function for each swipe.
 let upload = null;
 $(document).ready(function() {
     upload = function(url, json) {

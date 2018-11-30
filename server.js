@@ -22,7 +22,7 @@ io.sockets.on('connection', (socket) => {
 });
 
 function interpolateArray(data, fitCount) {
-    let linearInterpolate = function(before, after, atPoint) {
+    let linearInterpolate = (before, after, atPoint) => {
         return before + (after - before) * atPoint;
     };
 
