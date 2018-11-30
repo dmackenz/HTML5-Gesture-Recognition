@@ -19,9 +19,9 @@ I will be creating my own training set manually by creating a dummy client that 
 The structure of the collected data will be:
 ```JSON
 {
-	type:"right" // up, down, left, right
-	x:[] // the x coordinates of the swipe
-	y:[] // the y coordinates of the swipe
+	"type":"right" // up, down, left, right
+	"x":[] // the x coordinates of the swipe
+	"y":[] // the y coordinates of the swipe
 	// timestamp of swipe
 }
 ```
