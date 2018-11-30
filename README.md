@@ -19,7 +19,7 @@ I will be creating my own training set manually by creating a dummy client that 
 The structure of the collected data will be:
 ```JSON
 {
-	"type":"right", // up, down, right, left
+	"swipeType":"right",
 	"x": [
 		"0.2469352014010508",
 		"0.2679509632224168",
