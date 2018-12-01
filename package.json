@@ -4,7 +4,7 @@
   "description": "Server implementation for RNN gesture recognition",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node trainingServer.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +12,7 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "localtunnel": "^1.9.1",
+    "randomstring": "^1.1.5",
     "socket.io": "^2.1.1"
   }
 }
