@@ -6,8 +6,8 @@ Node.js gesture recognition for the browser
 * [x] Create client for recognizing gestures.
 * [x] Normalize gesture tracking for any viewport size.
 * [x] Create server with socket for accepting gestures.
-* [ ] Create training set for model using built client.
-* [ ] Create and train model. 
+* [x] Create training set for model using built client.
+* [ ] Create and train model.
 
 ### Overview
 The purpose of this project is to demonstrate how an artificial neural network can be used to recognize gestures on webpages. The idea for this project was heavily inspired by Google’s Quick, Draw! game.
