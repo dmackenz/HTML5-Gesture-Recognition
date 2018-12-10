@@ -9,10 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "localtunnel": "^1.9.1",
-    "randomstring": "^1.1.5",
-    "socket.io": "^2.1.1"
+    "@tensorflow/tfjs": "^0.14.1",
+    "express": "^4.16.4"
   }
 }
