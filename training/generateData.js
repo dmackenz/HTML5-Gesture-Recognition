@@ -12,13 +12,15 @@ const upName = 'up_swipes';
 let count;
 let swipes = [];
 let swipesPerFrame;
+let container = 'centered';
 
 /**
  * Setup for page.
  */
 function setup() {
     // Canvas to show debug information of swipes.
-    createCanvas(400, 400);
+    const canvas = createCanvas(floor(3 * windowWidth / 4), floor(3 * windowHeight / 4));
+    canvas.parent(container);
     background(0);
     strokeWeight(2);
 
@@ -31,8 +33,9 @@ function setup() {
     swipes[downName ] = [];
     swipes[upName   ] = [];
     swipesPerFrame = floor(numberSamples / numberFrames);
-    createP(`Swipes per frame: ${swipesPerFrame}`);
-    createP(`This script will run for approximately ${numberFrames / 60} seconds.`);
+
+    createP(`Swipes per frame: ${swipesPerFrame}`).parent(container);
+    createP(`This script will run for approximately ${numberFrames / 60} seconds.`).parent(container);;
 }
 
 
