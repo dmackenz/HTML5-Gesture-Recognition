@@ -1,4 +1,4 @@
-# Browser-Machine-Learning-Gesture-Recognition
+# HTML5 Gesture Recognition
 Gesture recognition for the browser
 
 ### Development in progress
