@@ -11,6 +11,7 @@
   "dependencies": {
     "@tensorflow/tfjs": "^0.14.1",
     "express": "^4.16.4",
-    "shuffle-array": "^1.0.1"
+    "shuffle-array": "^1.0.1",
+    "tfjs-node-save": "0.0.2"
   }
 }

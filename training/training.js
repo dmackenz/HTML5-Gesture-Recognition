@@ -4,7 +4,7 @@ const OutputLabels = require('./model').OutputLabels;
 
 const inputSize = 10;
 const outputSize = 4;
-const learningRate = 0.1;
+const learningRate = 0.01;
 
 const filenames = [
     './dataGeneration/data/right_swipes.json',
@@ -19,4 +19,8 @@ let model = new SwipeClassifier(
     new OutputLabels(['right', 'left', 'up', 'down'])
 );
 
-model.trainModel(filenames, trainRatio);
+main();
+
+async function main() {
+    await model.trainModel(filenames, trainRatio, 75);
+}
