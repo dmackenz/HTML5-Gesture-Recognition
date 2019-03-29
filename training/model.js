@@ -15,7 +15,7 @@ class SwipeClassifier {
     this.model.add(
       tf.layers.dense({
         inputShape: [this.network.inputSize],
-        units: 16,
+        units: 4,
         activation: "sigmoid"
       })
     );
