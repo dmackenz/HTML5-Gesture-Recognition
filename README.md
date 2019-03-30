@@ -32,7 +32,13 @@ The training set was created automatically by a JavaScript client that generates
 }
 ```
 
-
 ![report-01](/docs/report-01.png "report-01")
-
-
+![report-02](/docs/report-02.png "report-02")
+![report-03](/docs/report-03.png "report-03")
+![report-04](/docs/report-04.png "report-04")
+![report-05](/docs/report-05.png "report-05")
+![report-06](/docs/report-06.png "report-06")
+![report-07](/docs/report-07.png "report-07")
+![report-08](/docs/report-08.png "report-08")
+![report-09](/docs/report-09.png "report-09")
+![report-10](/docs/report-10.png "report-10")
