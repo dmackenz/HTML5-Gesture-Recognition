@@ -6,9 +6,9 @@ This concept provides client-side code for tracking mouse and touch based moveme
 
 ### Procedurally Generated Training Set
 The training set was created automatically by a JavaScript client that generates artificial swipe data and normalizes it for the viewport. This data was then used to train the neural network.
-
+<div style="text-align:center">
 ![data_generation](/docs/data_generation.gif "Procedurally generated swipes")
-
+</div>
 ##### The structure of the collected data
 ```JSON
 {
