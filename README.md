@@ -34,3 +34,5 @@ The training set was created automatically by a JavaScript client that generates
 
 
 ![report-01](/docs/report-01.png "report-01")
+
+
