@@ -9,7 +9,7 @@ The training set was created automatically by a JavaScript client that generates
 
 
 <div style="text-align:center">
-	<img src="./docs/data_generation.gif">
+	<img src="./docs/data_generation.gif"/>
 
 </div>
 
