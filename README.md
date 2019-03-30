@@ -12,11 +12,6 @@ The training set was created automatically by a JavaScript client that generates
 	<img src="./docs/data_generation.gif"/>
 </p>
 
-
-
-
-![data_generation](/docs/data_generation.gif "Procedurally generated swipes")
-
 ##### The structure of the collected data
 ```JSON
 {
