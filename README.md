@@ -4,6 +4,12 @@
 The purpose of this project is to demonstrate how an artificial neural network can be used to recognize gestures on webpages. The idea for this project was heavily inspired by Google’s Quick, Draw! game.<br>
 This concept provides client-side code for tracking mouse and touch based movements for both mobile and desktop. A swipe on the screen by either a finger or mouse is collected by the browser and classified/encoded to a specific set of gestures by a neural network. The current prototype is a proof of concept and will only be trained on four types of gestures (up, down, left, right). The current plan is to implement the neural network in Tensorflow.js.
 
+### Example
+
+<p align="center">
+	<img src="./docs/example.gif"/>
+</p>
+
 ### Files
 The important locations in the project folders can be found at:
 
