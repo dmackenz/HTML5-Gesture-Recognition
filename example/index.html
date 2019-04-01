@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <head>
+		 <meta charset="UTF-8"> 
+		
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
+
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <style>
+            .styled {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .centred {
+                text-align:center;
+            }
+            
+            #network-output {
+				font-size: 20px;
+			
+			}
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+			
+			<div class="row">
+				<div class="col-xs-12">
+					<h1 class="styled centred">Test Swipe Model</h1>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="row">
+						<div class="col-sm-12">
+							<h4>Model JSON:</h4> <input type="file" id="upload-json"/><br>
+							<h4>Model Binary:</h4> <input type="file" id="upload-weights"/><br>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-12" id="load-button">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-6" id="network-output">
+					<h3>Network Output</h3><br>
+				</div>
+            </div>
+            
+            <br>
+
+            <div class="row">
+                <div class="col-sm-6 styled centred" id="centered">
+					
+                </div>
+                <div class="col-sm-3 styled" id="coordinates">
+                    <h3>Coordinates</h3><br>
+                </div>
+                <div class="col-sm-3 styled" id="network-inputs">
+					<h3>Network Input</h3><br>
+                </div>
+            </div>
+        </div>
+
+
+		<script src="sketch.js"></script>
+
+    </body>
+</html>
